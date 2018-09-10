@@ -2,11 +2,13 @@
 
 {% block content %}
   {% for k, v in info.items() %}
-    <h2>{{ k }}: {{ v }}</h2>
+    <h3>{{ k }}: {{ v }}</h3>
   {% endfor %}
-
+<br>
     <h3>Some Of The Places I've Travelled To</h3>
     <ul>
-      {{ travel }}
+      {% for places in travel %}
+      <li>{{ places }}</li>
+      {% endfor %}
     </ul>
 {% endblock %}

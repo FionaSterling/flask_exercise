@@ -4,9 +4,11 @@
 <h1>{{ welcome }}</h1>
   <h3>Some Of My Favorite Animals</h3>
   <ul>
-    {{ favorites }}
+    {% for animal in favorites %}
+    <li>{{ animal }}</li>
+    {% endfor %}
   </ul>
-
+<br>
 {% for k, v in d.items() %}
   <h3>{{ k }}: {{ v }}</h3>
 {% endfor %}
