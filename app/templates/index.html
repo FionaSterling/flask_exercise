@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>{{ welcome }}</h1>
+  <h3>Some Of My Favorite Animals</h3>
+  <ul>
+    {{ favorites }}
+  </ul>
+
+{% for k, v in d.items() %}
+  <h3>{{ k }}: {{ v }}</h3>
+{% endfor %}
+{% endblock %}

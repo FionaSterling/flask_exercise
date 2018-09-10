@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  {% for k, v in info.items() %}
+    <h2>{{ k }}: {{ v }}</h2>
+  {% endfor %}
+
+    <h3>Some Of The Places I've Travelled To</h3>
+    <ul>
+      {{ travel }}
+    </ul>
+{% endblock %}
